@@ -2,39 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a279ae01-fd7e-44b0-89c0-91b22eaffde0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/exercise.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/babel.config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/public/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/public/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/App.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/assets/logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/components/HelloWorld.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/components/UploadImg.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/components/UploadVideo.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/router/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/views/About.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/views/Home.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/views/Main.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/views/courses/CourseEdit.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/views/courses/CourseList.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/views/courses/Edit.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/views/courses/List.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/apps/admin/src/admin.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/apps/admin/src/admin.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/apps/admin/src/courses/courses.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/apps/admin/src/courses/courses.controller.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/apps/admin/src/episodes/episodes.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/apps/admin/src/episodes/episodes.controller.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/apps/server/src/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/apps/server/src/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/libs/db/src/models/episode.model.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/libs/db/src/models/episode.model.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/tsconfig.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/admin/package-lock.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,6 +33,8 @@
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="ts.external.directory.path" value="D:\code\webstorm\vue\exercise\server\node_modules\typescript\lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -73,6 +46,7 @@
       <option name="presentableId" value="Default" />
       <updated>1607957045959</updated>
       <workItem from="1607957047332" duration="1266000" />
+      <workItem from="1607993273911" duration="2378000" />
     </task>
     <servers />
   </component>
@@ -90,7 +64,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="xuer" />
+                        <option value="origin/main" />
                       </list>
                     </value>
                   </entry>
@@ -101,6 +75,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
