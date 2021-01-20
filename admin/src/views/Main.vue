@@ -39,6 +39,8 @@ export default {
               {title: '首页',path: '/'},
               {title: '系列管理',path: '/courses/list'},
               {title: '视频管理',path: '/episodes/list'},
+              {title: '竞赛管理',path: '/comps/list'},
+              {title: '分类管理',path: '/categories/list'},
             ]
           },
           {

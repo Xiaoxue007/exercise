@@ -6,6 +6,7 @@ import { model } from 'mongoose';
 @modelOptions({
   schemaOptions: {
     timestamps: true,
+    toJSON: { virtuals: true }, // 设置了才能查询出虚拟字段
   },
 })
 export class Course {
@@ -19,7 +20,12 @@ export class Course {
   @prop()
   cover: string;
 
-  // @ApiProperty({description:'每一集'})
-  // @prop({ref: ()=>Episode})
-  // episode: Ref<Episode>[]
+  // 虚拟字段，用于查询
+  @ApiProperty({ description: '关联的每一集'})
+  @prop({
+    ref: () => Episode,
+    localField: '_id',
+    foreignField: 'course',
+  })
+  episodes: Ref<Episode>[];
 }

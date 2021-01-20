@@ -2,9 +2,15 @@ import { Module } from '@nestjs/common';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { CommonModule } from '@app/common';
+import { CoursesModule } from './courses/courses.module';
+import { AuthModule } from './auth/auth.module';
+import { ActionsModule } from './actions/actions.module';
+import { CommentsModule } from './comments/comments.module';
+import { CompsModule } from './comps/comps.module';
+import { CategoriesModule } from './categories/categories.module';
 
 @Module({
-  imports: [CommonModule],
+  imports: [CommonModule, CoursesModule, AuthModule, ActionsModule, CommentsModule, CompsModule, CategoriesModule],
   controllers: [AppController],
   providers: [AppService],
 })

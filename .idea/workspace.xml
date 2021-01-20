@@ -1,11 +1,60 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a279ae01-fd7e-44b0-89c0-91b22eaffde0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/admin/.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="a279ae01-fd7e-44b0-89c0-91b22eaffde0" name="Default Changelist" comment="&quot;修改&quot;">
+      <change afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/webServers.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/.editorconfig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/.eslintrc.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/.prettierrc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/assets/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/assets/img/index1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/assets/img/index2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/assets/img/logo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/assets/img/play.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/assets/img/slogan.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/components/CommentList.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/components/LikeBtn.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/components/Logo.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/components/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/components/Reply.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/components/Swiper.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/components/layouts/DrawerLeft.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/components/layouts/LayoutsSider.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/components/layouts/MainDrawerLeft.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/components/layouts/MainNavModal.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/components/layouts/MessageList.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/components/layouts/NavModal.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/components/layouts/NavModalLogin.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/components/layouts/NavModalRegister.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/components/layouts/SubItem.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/layouts/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/layouts/default.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/middleware/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/nuxt.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pages/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pages/comps/_id.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pages/courses/_id.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pages/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pages/my/whisper.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/plugins/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/plugins/eventBus.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/plugins/iview.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/static/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/static/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/static/icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/store/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/store/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/admin/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/admin/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/views/Main.vue" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/views/Main.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/views/courses/Edit.vue" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/views/courses/Edit.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/views/courses/List.vue" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/views/courses/List.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,6 +85,7 @@
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
     <property name="ts.external.directory.path" value="D:\code\webstorm\vue\exercise\server\node_modules\typescript\lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
+    <property name="vuejs.nuxt.types-notification-shown" value="true" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -47,6 +97,7 @@
       <updated>1607957045959</updated>
       <workItem from="1607957047332" duration="1266000" />
       <workItem from="1607993273911" duration="2378000" />
+      <workItem from="1611103774443" duration="814000" />
     </task>
     <servers />
   </component>
@@ -79,5 +130,11 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="&quot;修改&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="&quot;修改&quot;" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

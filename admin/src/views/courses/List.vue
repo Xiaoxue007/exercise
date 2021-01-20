@@ -27,7 +27,8 @@
             </video>
 
             <p v-if="field.type =='label'">
-              {{scope.row[name].name}}
+              {{scope.row[name]? scope.row[name].name  : '' }}
+<!--              {{scope.row[name]}}-->
             </p>
           </template>
         </el-table-column>
@@ -49,7 +50,7 @@
                      :page-size=page.pageSize :total=page.total>
       </el-pagination>
 
-      <el-dialog :title="id?'编辑':'创建'" v-model="isEditForm" v-if="isEditForm" class="edit">
+      <el-dialog :title="id?'编辑':'创建'" v-model="isEditForm" v-if="isEditForm">
         <Edit :is-new="id?false:true" :id="id" @dialogClose="dialogClose()"/>
       </el-dialog>
 
@@ -102,11 +103,14 @@ export default{
     async fetch(){
       if(this.resource === 'episodes')
         this.query.populate = 'course'
+      else if(this.resource === 'categories')
+        this.query.populate = 'parent'
       const res = await this.$http.get(`${this.resource}`, {
         params: {
           query: this.query
         }
-      })
+      }).catch((err) => console.log('rejected', err));
+
       this.data = res.data
       this.page.total = this.data.total
       console.log(this.data)
@@ -181,11 +185,12 @@ export default{
 
 <style scoped>
   .el-dialog__body img{
-    width: 100%;
+    width: 50%;
   }
+</style>
 
-  .edit{
-    width: 70%;
-    height: 80%;
-  }
+<style>
+.el-dialog{
+  width: 70%!important;
+}
 </style>

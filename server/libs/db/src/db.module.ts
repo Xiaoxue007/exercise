@@ -5,8 +5,20 @@ import { User } from '@libs/db/models/user.model';
 import { model } from 'mongoose';
 import { Course } from '@libs/db/models/course.model';
 import { Episode } from '@libs/db/models/episode.model';
+import { Action } from '@libs/db/models/action.model';
+import { Comment } from '@libs/db/models/comment.model';
+import { Comp } from '@libs/db/models/comp.model';
+import { Category } from '@libs/db/models/category.model';
 // 导入导出所有的模型让他们在所有的地方都能使用
-const models = TypegooseModule.forFeature([User, Course, Episode]);
+const models = TypegooseModule.forFeature([
+  User,
+  Course,
+  Episode,
+  Action,
+  Comment,
+  Comp,
+  Category,
+]);
 
 // 数据库的连接都写在这个公共的库中
 

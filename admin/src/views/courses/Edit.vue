@@ -1,16 +1,19 @@
 <template>
   <div>
 
-    <el-form ref="form" :model="fields.data" label-width="80px">
+    <el-form ref="form" :model="fields.data" label-width="80px" inline="true">
+
       <el-form-item v-for="(form,index) in fields.forms" :label=form.label :key="index">
-        <el-input v-if="!form.type" v-model="fields.data[`${form.prop}`]"></el-input>
+        <el-col :span="form.span || 24">
+          <el-input v-if="!form.type" v-model="fields.data[`${form.prop}`]"></el-input>
+        </el-col>
 
         <div v-if="form.type && form.type === 'uploadImg'">
           <UploadImg :src="fields.data[`${form.prop}`]" :is-file="fields.data[`${form.prop}`]?true:false"
                      :prop="`${form.prop}`" @updateFile="updateFile"/>
         </div>
 
-        <el-select  v-if="form.type && form.type === 'select'" placeholder="请选择" v-model="fields.data.course">
+        <el-select filterable v-if="form.type && form.type === 'select'" placeholder="请选择" v-model="fields.data[`${form.prop}`]" :multiple="form.sMulti || false">
             <el-option v-for="item in form.select" :key="item.label"
                        :label="item.label" :value="item.value"></el-option>
         </el-select>
@@ -19,6 +22,19 @@
           <UploadVideo :src="fields.data[`${form.prop}`]" :prop="`${form.prop}`"
                        :is-file="fields.data[`${form.prop}`]?true:false" @updateFile="updateFile"/>
         </div>
+
+        <div v-if="form.type && form.type === 'textContent'">
+          <VueEditor v-model="fields.data[`${form.prop}`]"></VueEditor>
+        </div>
+
+      <el-row v-if="form.type && form.type === 'dateTime'" type="flex" justify="space-between">
+        <el-col :span="form.span || 11" >
+          <el-date-picker type="date" placeholder="选择日期" v-model="fields.data[`${form.prop}`]" style="width: 100%;"></el-date-picker>
+        </el-col>
+        <el-col :span="form.span || 11">
+          <el-time-picker placeholder="选择时间" v-model="fields.data[`${form.prop}`]" style="width: 100%;"></el-time-picker>
+        </el-col>
+      </el-row>
 
       </el-form-item>
 
@@ -33,6 +49,7 @@
 <script>
 import UploadVideo from "@/components/UploadVideo";
 import UploadImg from "@/components/UploadImg";
+import { VueEditor } from "vue3-editor";
 
 export default {
   name: "Edit",
@@ -45,7 +62,7 @@ export default {
   components:{
     UploadVideo,
     UploadImg,
-
+    VueEditor,
   },
   props:{
     isNew:Boolean,

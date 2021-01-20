@@ -8,9 +8,10 @@ async function bootstrap() {
   app.enableCors();
   // DocumentBuilder是一个辅助类，有助于结构的基本文件SwaggerModule。它包含几种方法，可用于设置诸如标题，描述，版本等属性。
   const options = new DocumentBuilder()
-    .setTitle('视频网站-后台管理API')
-    .setDescription('后台管理界面的服务端API')
+    .setTitle('视频网站-前端API')
+    .setDescription('供网站和服务端调用的服务端API')
     .setVersion('1.0')
+    .addBearerAuth()
     .build();
   // 为了创建完整的文档（具有定义的HTTP路由）createDocument()方法带有两个参数，分别是应用程序实例和基本Swagger选项
   const document = SwaggerModule.createDocument(app, options);

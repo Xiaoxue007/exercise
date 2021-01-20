@@ -6,6 +6,8 @@ import { CoursesModule } from './courses/courses.module';
 import { EpisodesModule } from './episodes/episodes.module';
 import { MulterModule } from '@nestjs/platform-express';
 import { CommonModule } from '../../../libs/common/src';
+import { CompsModule } from './comps/comps.module';
+import { CategoriesModule } from './categories/categories.module';
 
 // eslint-disable-next-line @typescript-eslint/no-var-requires
 const MAO = require('multer-aliyun-oss');
@@ -30,6 +32,8 @@ const MAO = require('multer-aliyun-oss');
     UsersModule,
     CoursesModule,
     EpisodesModule,
+    CompsModule,
+    CategoriesModule,
   ],
   controllers: [AdminController],
   providers: [AdminService],
